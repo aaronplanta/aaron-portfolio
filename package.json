@@ -1,5 +1,5 @@
 {
-  "homepage": "aaronplanta.github.io/aaron-portfolio",
+  "homepage": "https://aaronplanta.github.io/aaron-portfolio",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "react-scripts start",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
