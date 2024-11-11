@@ -1,0 +1,427 @@
+.resume-zoom {
+    position: fixed;
+    z-index: 11;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Shift it back by half of its own width and height */
+    backdrop-filter: blur(20px);
+    height: 100%;
+    width: 100%;
+}
+
+#resume-zoom {
+    position: fixed;
+    cursor: zoom-out;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Shift it back by half of its own width and height */
+    height: 90vh;
+    max-width: 90vw; /* Prevent it from overflowing horizontally */
+    object-fit: contain; /* Ensures it keeps its aspect ratio */
+}
+
+.about-container {
+    /* background-color: red; */
+    margin-inline: 12%;
+}
+
+.about-container h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #E0F0E1;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.about-content {
+    display: flex;
+    padding-bottom: 70px;
+    height: 500px;
+}
+
+.categories1 {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-right: 50px;
+    gap: 30px;
+    border-right: 1px solid #E0F0E1;
+}
+
+.categories1 button {
+    background-color: transparent;
+    border: none;
+    text-align: start;
+    font-size: 50px;
+    font-weight: 800;
+    color: #E0F0E1;
+    text-shadow: -2px 6px 4px #9A9A9A;
+    cursor: pointer;
+    padding-left: 0%;
+}
+
+.categories1 button:hover {
+    color: #E0F0E1;
+    text-shadow: -2px 6px 4px rgba(154, 154, 154, 1);
+}
+
+.categories1 .back-button {
+    background-color: transparent;
+    border: none;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 400;
+    color: #E0F0E1;
+    text-shadow: -2px 6px 4px #9A9A9A;
+    cursor: pointer;
+    background-image: url("../images/left-arrow-light.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+button.not-selected {
+    opacity: 0.6;
+}
+
+button.not-selected:hover {
+    opacity: 1; 
+}
+
+.category-content {
+    /* background-color: yellow; */
+    margin-left: 20px;
+    margin-top: 15px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 1px solid #9A9A9A; */
+
+    /* background-image: url("../images/bg-firebase.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.category-content h2{
+    color: #E0F0E1;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.category-content p{
+    color: #E0F0E1;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.prog-logo1 img,
+.prog-logo2 img {
+    height: auto;
+    width: 30px;
+}
+
+.prog-logo1 {
+    margin-top: 15px;
+}
+
+.prog-logo1,
+.prog-logo2 {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-bottom: 30px;
+}
+
+.goals-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.goals-content button {
+    background-color: transparent;
+    padding: 5% 2%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E0F0E1;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons take full width of the container */
+    cursor: pointer; /* Pointer cursor for button */
+}
+
+.iSlide,
+.sSlide,
+.gSlide,
+.mSlide {
+    border: 1px solid #E0F0E1;
+    color: #E0F0E1;
+    /* border: 1px solid #E0F0E1;
+    border-radius: 15px; */
+    display: inline-block;
+    cursor: pointer;
+    position: relative; /* Required for absolute positioning of the image */
+    overflow: hidden; /* Hide overflow to avoid the image going outside */
+    transition: color 0.4s ease-out; /* Smooth transition for text color */
+    z-index: 1; /* Keep text above the image */
+}
+
+.iSlide::before,
+.sSlide::before,
+.gSlide::before,
+.mSlide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    right: 100%;
+    bottom: 0;
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Transition for opacity and slide effect */
+    z-index: -1; /* Place the image below the text */
+}
+
+.iSlide:hover::before,
+.sSlide:hover::before,
+.gSlide:hover::before,
+.mSlide:hover::before {
+    transform: translateX(100%); /* Slide in from left to right */
+    opacity: 1; /* Show the image on hover */
+}
+
+/* Specific hover images */
+.iSlide:hover::before {
+    background-image: url('../images/led_zeplin.jpg'); /* Replace with your image URL */
+}
+
+.sSlide:hover::before {
+    background-image: url('../images/sunshine.jpg'); /* Replace with your image URL */
+}
+
+.gSlide:hover::before {
+    background-image: url('../images/2k24.jpg'); /* Replace with your image URL */
+}
+
+.mSlide:hover::before {
+    background-image: url('../images/blond.jpg'); /* Replace with your image URL */
+}
+
+.iSlide:hover,
+.sSlide:hover,
+.gSlide:hover,
+.mSlide:hover {
+    color: white; /* Change text color slightly to make it visible over the image */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.educ-content,
+.skills-content,
+.goals-content,
+.cert-content,
+.resume-content {
+    height: 100%;
+}
+
+.educ-content {
+    /* background-image: url(../images/umak.png); */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+}
+
+.skills-content {
+    /* background-image: url(../images/skills-bg.png); */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+}
+
+.resume-container {
+    display: flex;
+    gap: 2%;
+}
+
+.resume-content {
+    background-image: url(../images/Planta-Resume_Updated.png);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    height: 450px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-in;
+    border-radius: 15px;
+    border: 1px solid #E0F0E1;
+}
+
+.educ-content p {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.technical-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-content .technical-content p {
+    margin: 0px;
+}
+
+#technical-text {
+    color: #9A9A9A;
+    margin-bottom: 2%;
+}
+
+.cert-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 5px ;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.cert-content img {
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 1500px){
+    .resume-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .resume-content {
+        height: 220px;
+        width: 70%;
+    }
+
+    .category-content {
+        padding-bottom: 2%;
+    }
+
+    .educ-content {
+        background-image: none
+    }
+    
+    .skills-content {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1100px){
+    .about-content {
+        height: 420px;
+    }
+
+    .categories1 button {
+        font-size: 40px;
+    }
+
+    .resume-content {
+        height: 180px;
+    }
+}
+
+@media (max-width: 855px){
+    .about-content{
+        margin-top: 10px;
+        padding-bottom: 0%;
+        flex-direction: column;
+        height: auto;
+        border-bottom: 1px solid #9A9A9A;
+    }
+
+    .categories1 {
+        border-right: none;
+        flex-direction: row;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        gap: 20px;
+    }
+
+    .categories1 button {
+        font-size: 30px;
+    }
+
+    .category-content {
+        margin: 0%;
+        padding: 0%;
+        padding-top: 5%;
+        border-bottom-width: 80%;
+    }
+
+    .category-content p {
+        font-size: 16px;
+    }
+
+    .resume-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume-content {
+        width: 60%;
+        margin-bottom: 2%;
+    }
+
+    
+    .cert-content {
+        margin-inline: 15%;
+        margin-bottom: 2%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) { 
+    .about-content {
+        padding-bottom: 5%;
+    }
+    
+    .category-content {
+        margin-top: 20px;
+    }
+
+    .categories1 button {
+        font-size: 20px;
+    }
+
+    .category-content h2 {
+        font-size: 16px;
+    }
+
+    .category-content p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .resume-content {
+        height: 100px;
+    }
+
+    .about-container h1 {
+        font-size: 20px;
+    }
+}

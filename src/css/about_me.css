@@ -1,0 +1,585 @@
+.panel-about_me {
+    /* background-color: red; */
+}
+
+.panel-about_me p {
+    font-size: 30px;
+    font-weight: 800;
+    color: #E0F0E1;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.about_me-content {
+    /* background-color: blue; */
+    display: flex;
+    gap: 0.5%;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 3%;
+    width: auto;
+}
+
+.image {
+    /* background-color: green; */
+    background-image: url('../images/me.png');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 24%;
+    height: 380px;
+}
+
+.categories {
+    /* background-color: green; */
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 380px;
+}
+
+.categories button {
+    /* background-color: green; */
+    background-color: transparent;
+    padding: 5% 2%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E0F0E1;
+    border-radius: 10px;
+    border: 1px solid #E0F0E1;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons take full width of the container */
+    flex-grow: 1; /* Allow buttons to grow and fill space */
+    min-width: 150px; /* Minimum width to avoid too narrow buttons */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories button:hover {
+    background-color: #E0F0E1;
+    color: #181818;
+    border: 1px solid #E0F0E1;
+}
+
+.categories button.selected {
+    background-color: #E0F0E1;
+    color: #181818;
+    border: 1px solid #E0F0E1;
+}
+
+.specifics {
+    /* background-color: green; */
+    background-image: url(../images/umak.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #E0F0E1;
+    border-radius: 15px;
+    width: 28%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.specifics button {
+    /* background-color: green; */
+    /* background-color: transparent; */
+    padding: 5% 2%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+    border-radius: 10px;
+    border: 1px solid #181818;
+    width: 80%;
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.specifics button:hover{
+    background-color: #181818;
+    color: #E0F0E1;
+    border: 1px solid #E0F0E1;
+}
+
+.specifics .hobbies button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.education {
+    /* background-color: yellow; */
+    background-image: url(../images/umak.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #E0F0E1;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.university {
+    /* background-color: orange; */
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.university1 {
+    /* background-color: yellow; */
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 80%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+}
+
+.university1 h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+}
+
+.university1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.awards {
+    /* background-color: orange; */
+    background-image: url(../images/umak.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards1 {
+    /* background-color: yellow; */
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    align-items: center;
+}
+
+.awards1 h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+}
+
+.awards1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.extracurricular {
+    /* background-color: orange; */
+    background-image: url(../images/umak.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extracurricular1 {
+    /* background-color: yellow; */
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    align-items: center;
+}
+
+.extracurricular1 h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+}
+
+.extracurricular1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.technical {
+    /* background-color: orange; */
+    background-image: url(../images/skills.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technical1 {
+    /* background-color: yellow; */
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    align-items: center;
+}
+
+.technical1 h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+}
+
+.technical1 p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.programming {
+    /* background-color: orange; */
+    background-image: url(../images/skills.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming1 {
+    /* background-color: yellow; */
+    border: 1px solid #181818;
+    border-radius: 15px;
+    width: 80%;
+    height: auto; /* Allow flexible height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programming1 h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%; /* Reduced gap for better spacing */
+    margin: 10px 0; /* Add vertical space between rows */
+}
+
+.row1 img,
+.row2 img,
+.row3 img {
+    height: 50px; /* Uniform height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+    object-fit: contain; /* Ensure images fit well */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .programming1 {
+        width: 95%; /* Full width on smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .row1 img,
+    .row2 img,
+    .row3 img {
+        height: 35px; /* Reduce image size */
+    }
+}
+
+
+.skill {
+    /* background-color: yellow; */
+    background-image: url(../images/skills.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid #E0F0E1;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.education button,
+.skill button {
+    background-color: transparent;
+}
+
+.hobbies button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hobbies {
+    /* background-color: yellow; */
+    background-image: url(../images/hobbies.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.iSlide,
+.sSlide,
+.gSlide,
+.mSlide {
+    color: #FFF;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative; /* Required for absolute positioning of the image */
+    overflow: hidden; /* Hide overflow to avoid the image going outside */
+    transition: color 0.4s ease-out; /* Smooth transition for text color */
+    z-index: 1; /* Keep text above the image */
+}
+
+.iSlide::before,
+.sSlide::before,
+.gSlide::before,
+.mSlide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    right: 100%;
+    bottom: 0;
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out; /* Transition for opacity and slide effect */
+    z-index: -1; /* Place the image below the text */
+}
+
+.iSlide:hover::before,
+.sSlide:hover::before,
+.gSlide:hover::before,
+.mSlide:hover::before {
+    transform: translateX(100%); /* Slide in from left to right */
+    opacity: 1; /* Show the image on hover */
+}
+
+/* Specific hover images */
+.iSlide:hover::before {
+    background-image: url('../images/led_zeplin.jpg'); /* Replace with your image URL */
+}
+
+.sSlide:hover::before {
+    background-image: url('../images/sunshine.jpg'); /* Replace with your image URL */
+}
+
+.gSlide:hover::before {
+    background-image: url('../images/2k24.jpg'); /* Replace with your image URL */
+}
+
+.mSlide:hover::before {
+    background-image: url('../images/blond.jpg'); /* Replace with your image URL */
+}
+
+.iSlide:hover,
+.sSlide:hover,
+.gSlide:hover,
+.mSlide:hover {
+    color: white; /* Change text color slightly to make it visible over the image */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.certificates {
+    background-color: #C4C4C4;
+    /* background-image: url(../images/resume.jpg); */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid #E0F0E1;
+}
+
+.resume {
+    /* background-color: #C4C4C4; */
+    background-image: url(../images/resume.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid #E0F0E1;
+}
+
+@media (max-width: 960px) {
+    .about_me-content {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image {
+        display: none;
+    }
+
+    .categories,
+    .specifics {
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+    .about_me-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image {
+        display: none;
+    }
+
+    .categories{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        /* overflow: hidden; */
+        overflow-x: scroll;
+        white-space: nowrap; /* Prevents wrapping of the buttons */
+        scrollbar-width: none;
+        flex-shrink: 0;
+    }
+
+    .categories button {
+        width: 0; /* Ensure buttons take full width of the container */
+        box-sizing: unset; /* Ensure padding and border are included in width */
+    }
+    
+
+    .categories::-webkit-scrollbar {
+        display: none; /* Hides scrollbar in WebKit browsers (Chrome, Safari) */
+    }
+
+    .specifics {
+        width: 70%;
+    }
+}
