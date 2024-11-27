@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/aaron-portfolio/static/css/main.0956dd89.css",
-    "main.js": "/aaron-portfolio/static/js/main.c9781300.js",
+    "main.css": "/aaron-portfolio/static/css/main.f0c581d1.css",
+    "main.js": "/aaron-portfolio/static/js/main.776ccfec.js",
     "static/js/453.acca0757.chunk.js": "/aaron-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/me.png": "/aaron-portfolio/static/media/me.4973c16231e5fa7b4b6e.png",
+    "static/media/fintech.png": "/aaron-portfolio/static/media/fintech.c04e0f4f0c3eed6516c9.png",
+    "static/media/transact.png": "/aaron-portfolio/static/media/transact.ae553a11643d8af5c06e.png",
+    "static/media/nexus-1.png": "/aaron-portfolio/static/media/nexus-1.ee8f1c52663939ff03c9.png",
     "static/media/cert5.png": "/aaron-portfolio/static/media/cert5.ff42c6c5c87071ef81a4.png",
     "static/media/cert3.png": "/aaron-portfolio/static/media/cert3.2a864c772c642f3ae8df.png",
     "static/media/cert4.png": "/aaron-portfolio/static/media/cert4.0a8de0400e17a84c2c86.png",
@@ -39,12 +42,12 @@
     "static/media/typescript-light.png": "/aaron-portfolio/static/media/typescript-light.8f4fc31e34d5e11101f7.png",
     "static/media/right-arrow-light.png": "/aaron-portfolio/static/media/right-arrow-light.0fa66c8b045e46f3a730.png",
     "index.html": "/aaron-portfolio/index.html",
-    "main.0956dd89.css.map": "/aaron-portfolio/static/css/main.0956dd89.css.map",
-    "main.c9781300.js.map": "/aaron-portfolio/static/js/main.c9781300.js.map",
+    "main.f0c581d1.css.map": "/aaron-portfolio/static/css/main.f0c581d1.css.map",
+    "main.776ccfec.js.map": "/aaron-portfolio/static/js/main.776ccfec.js.map",
     "453.acca0757.chunk.js.map": "/aaron-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0956dd89.css",
-    "static/js/main.c9781300.js"
+    "static/css/main.f0c581d1.css",
+    "static/js/main.776ccfec.js"
   ]
 }
