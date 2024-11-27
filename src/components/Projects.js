@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import '../css/projects.css';
-import nexus from '../images/led_zeplin.jpg'
-import fintech from '../images/blond.jpg'
-import transact from '../images/sunshine.jpg'
+import nexus from '../images/nexus-1.png'
+import fintech from '../images/fintech.png'
+import transact from '../images/transact.png'
 
 export default function Projects() {
     const [currentDivIndex, setCurrentDivIndex] = useState(0);
@@ -26,6 +26,21 @@ export default function Projects() {
     const listItems = [
         <li className="projects-content" key="1">
             <div className="media">
+                <img src={fintech} />
+            </div>
+            <div className="description">
+                <div className="txtName">
+                    <h1>NEXUS FINTECH SALES</h1>
+                </div>
+                <p>The University of Makati Cooperative sees an opportunity to overcome their challenges by partnering with NEXUS FINTECH SALES. Our Point of Sale (POS) System offers a comprehensive solution that addresses their specific requirements. With our POS System, the cooperative will have the capability to efficiently process payments, manage inventory in real-time, and gain valuable insights into customer preferences and sales trends.</p>
+                <div className="icons">
+                    <button className="java-script"></button>
+                    <button className="css"></button>
+                </div>
+            </div>
+        </li>,
+        <li className="projects-content" key="2">
+            <div className="media">
                 <img src={nexus} />
             </div>
             <div className="description">
@@ -36,21 +51,6 @@ export default function Projects() {
                 <div className="icons">
                     <button className="android"></button>
                     <button className="java"></button>
-                    <button className="java-script"></button>
-                    <button className="css"></button>
-                </div>
-            </div>
-        </li>,
-        <li className="projects-content" key="2">
-            <div className="media">
-                <img src={fintech} />
-            </div>
-            <div className="description">
-                <div className="txtName">
-                    <h1>NEXUS FINTECH SALES</h1>
-                </div>
-                <p>The University of Makati Cooperative sees an opportunity to overcome their challenges by partnering with NEXUS FINTECH SALES. Our Point of Sale (POS) System offers a comprehensive solution that addresses their specific requirements. With our POS System, the cooperative will have the capability to efficiently process payments, manage inventory in real-time, and gain valuable insights into customer preferences and sales trends.</p>
-                <div className="icons">
                     <button className="java-script"></button>
                     <button className="css"></button>
                 </div>

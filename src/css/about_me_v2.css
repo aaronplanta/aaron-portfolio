@@ -359,6 +359,13 @@ button.not-selected:hover {
         overflow-x: scroll;
         scrollbar-width: none;
         gap: 20px;
+
+        -webkit-overflow-scrolling: touch;
+        -webkit-scrollbar: none;
+    }
+
+    .categories1::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for WebKit browsers (e.g., Safari, Chrome) */
     }
 
     .categories1 button {

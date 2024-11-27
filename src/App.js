@@ -73,29 +73,30 @@ function App() {
     });
   };
 
-  const introRef = useRef(null);
+  // const introRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const introElement = introRef.current;
-      const introPosition = introElement.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.3;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const introElement = introRef.current;
+  //     const introPosition = introElement.getBoundingClientRect().top;
+  //     const screenPosition = window.innerHeight / 1.3;
 
-      if (introPosition < screenPosition) {
-        introElement.classList.add('visible');
-      }
-    };
+  //     if (introPosition < screenPosition) {
+  //       introElement.classList.add('visible');
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <>
       <Cursor />
       <div className="page-container">
         <Header />
-        <div className="intro" ref={introRef}>
+        <div className="intro">
+        {/* <div className="intro" ref={introRef}> */}
           <h1>ASPIRING SOFTWARE ENGINEER AND DB ADMINISTRATOR</h1>
           <p>Aaron Patrick N. Planta<br></br>Makati, Philippines</p>
           <div>

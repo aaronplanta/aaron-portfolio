@@ -104,21 +104,24 @@ export default function AboutMeV2() {
                                     SoftEng and ProMan PBL Excellence Award<br></br>
                                     UMEMPC Digital Solutions Award
                                 </p>
-                                <h2>EXTRACURRICULAR</h2>
+                                <h2>SEMINARS & CONVENTIONS</h2>
                                 <p>
-                                    2021 InfoTech: WebDev 1st runner-up (Eco-Shop)<br></br>
-                                    2022 InfoTech: Android 2nd runner-up (RemindMe)<br></br>
-                                    2023 InfoTech: Android Champions (UMAK NEXUS)
+                                    Philippine GameDev Expo 2024<br></br>
+                                    Anchored in Tech: Lifestyle, Leadership, and Legacy<br></br>
+                                    Webinars on H.R. Compensation and Benefits
                                 </p>
                             </div>}
                             {selectedCategory === 'SKILLS1' && 
                             <div className="skills-content">
-                                <h2>TECHNICAL</h2>
+                                <h2>SOFT</h2>
                                 <div className="technical-content">
                                     <p>Problem Solving</p>
                                     <p id="technical-text">Analyze complex issues and develop effective solutions to resolve them.</p>
                                     <p>Collaboration and Communication</p>
                                     <p id="technical-text">Work well with others and communicate clearly.</p>
+                                </div>
+                                <h2>TECHNICAL</h2>
+                                <div className="technical-content">
                                     <p>Schema Design</p>
                                     <p id="technical-text">Design efficient database schemas that organize data logically.</p>
                                     <p>Application Development</p>
@@ -129,7 +132,6 @@ export default function AboutMeV2() {
                                 <h2>PROGRAMMING</h2>
                                 <div className="prog-logo1">
                                     <img src={jslogo} />
-                                    <img src={tslogo} />
                                     <img src={csslogo} />
                                     <img src={pythonlogo} />
                                 {/* </div>
@@ -137,7 +139,6 @@ export default function AboutMeV2() {
                                     <img src={reactlogo} />
                                     <img src={androidlogo} />
                                     <img src={firebaselogo} />
-                                    <img src={tailwindlogo} />
                                 </div>
                             </div>}
                                 {selectedCategory === 'GOALS1' && 
@@ -153,16 +154,16 @@ export default function AboutMeV2() {
                                         routines that include regular exercise, mental health practices, and hobbies outside of work, to 
                                         keep me motivated and avoid burnout in the long run.</p>
                                     <h2>LIFE</h2>
-                                    <p>Have a happy life.</p>
+                                    <p>Live a happy life.</p>
                                 
                                 </div>}
                             {selectedCategory === 'CERTIFICATES1' && 
                             <div className="cert-content">
                                 <img src={cert1} />
                                 <img src={cert2} />
-                                <img src={cert3} />
+                                {/* <img src={cert3} />
                                 <img src={cert4} />
-                                <img src={cert5} />
+                                <img src={cert5} /> */}
                             </div>}
                             {selectedCategory === 'RESUME1' && 
                             <div className="resume-container">

@@ -293,6 +293,7 @@ a {
 
     .description h1 {
         font-size: 20px;
+        text-align: initial;
     }
 
     .left-right p,
