@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aaron-portfolio/static/css/main.990512f0.css",
-    "main.js": "/aaron-portfolio/static/js/main.1b4547ed.js",
+    "main.css": "/aaron-portfolio/static/css/main.9e14d892.css",
+    "main.js": "/aaron-portfolio/static/js/main.9f5e106b.js",
     "static/js/453.acca0757.chunk.js": "/aaron-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/me.png": "/aaron-portfolio/static/media/me.4973c16231e5fa7b4b6e.png",
     "static/media/fintech.png": "/aaron-portfolio/static/media/fintech.c04e0f4f0c3eed6516c9.png",
@@ -42,12 +42,12 @@
     "static/media/typescript-light.png": "/aaron-portfolio/static/media/typescript-light.8f4fc31e34d5e11101f7.png",
     "static/media/right-arrow-light.png": "/aaron-portfolio/static/media/right-arrow-light.0fa66c8b045e46f3a730.png",
     "index.html": "/aaron-portfolio/index.html",
-    "main.990512f0.css.map": "/aaron-portfolio/static/css/main.990512f0.css.map",
-    "main.1b4547ed.js.map": "/aaron-portfolio/static/js/main.1b4547ed.js.map",
+    "main.9e14d892.css.map": "/aaron-portfolio/static/css/main.9e14d892.css.map",
+    "main.9f5e106b.js.map": "/aaron-portfolio/static/js/main.9f5e106b.js.map",
     "453.acca0757.chunk.js.map": "/aaron-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.990512f0.css",
-    "static/js/main.1b4547ed.js"
+    "static/css/main.9e14d892.css",
+    "static/js/main.9f5e106b.js"
   ]
 }
