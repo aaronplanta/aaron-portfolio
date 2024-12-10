@@ -97,8 +97,9 @@ function App() {
         <Header />
         <div className="intro">
         {/* <div className="intro" ref={introRef}> */}
-          <h1>ASPIRING SOFTWARE ENGINEER AND DB ADMINISTRATOR</h1>
-          <p>Aaron Patrick N. Planta<br></br>Makati, Philippines</p>
+          {/* <h1>ASPIRING SOFTWARE ENGINEER AND DB ADMINISTRATOR</h1> */}
+          <h1>ASPIRING SOFTWARE ENGINEER AND APPLICATION DEVELOPER</h1>
+          <p>Aaron Patrick N. Planta<br></br>Taguig, Philippines</p>
           <div>
             <button onClick={showMessage}>Leave A Message</button>
           </div>

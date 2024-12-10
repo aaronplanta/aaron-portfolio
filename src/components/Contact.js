@@ -30,7 +30,11 @@ export default function Contact() {
                 </div>
                 <div className="social">
                     <div className="details-icons">
-                        <a href="https://www.facebook.com/aaronpatrick.planta" target="_blank">
+                        <a 
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=aaronnplanta@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <img src={facebook} />
                         </a>    
                         <a href="https://www.linkedin.com/in/aaron-patrick-planta-72b853336" target="_blank">                    

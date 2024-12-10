@@ -9,11 +9,11 @@ import androidlogo from '../images/android-logo.png'
 import firebaselogo from '../images/firebase-logo.png'
 import tailwindlogo from '../images/tailwind-logo.png'
 import resume from '../images/Planta-Resume_Updated.png'
-import cert1 from '../images/cert1.png'
-import cert2 from '../images/cert2.jpg'
-import cert3 from '../images/cert3.png'
-import cert4 from '../images/cert4.png'
-import cert5 from '../images/cert5.png'
+import cert2 from '../images/cert1.png'
+import cert3 from '../images/cert2.jpg'
+import cert4 from '../images/mooc-cert.png'
+import cert1 from '../images/js-cert.png'
+import cert5 from '../images/ibm-cert.png'
 
 export default function AboutMeV2() {
 
@@ -160,20 +160,26 @@ export default function AboutMeV2() {
                             {selectedCategory === 'CERTIFICATES1' && 
                             <div className="cert-content">
                                 <img src={cert1} />
+                                <img src={cert5} />
                                 <img src={cert2} />
-                                {/* <img src={cert3} />
+                                <img src={cert3} />
                                 <img src={cert4} />
-                                <img src={cert5} /> */}
                             </div>}
                             {selectedCategory === 'RESUME1' && 
                             <div className="resume-container">
-                                <div className="resume-content" onClick={handleZoomResume}>
-                                    {/* VIEW<br></br>
-                                    RESUME */}
-                                </div>
-                                <div className="resume-content" onClick={handleZoomCV}>
-                                    {/* VIEW<br></br>
-                                    CV */}
+                                <div className="resume-content" onClick={handleZoomResume} />
+                                {/* <div className="resume-content" onClick={handleZoomCV} /> */}
+                                <div className="resume-text">
+                                    <h2>👋 Hi! I'm Aaron,</h2>
+                                    <p>A graduating Computer Science student specializing in Application Development. 
+                                    I consider myself an easy-going individual who enjoys taking on challenges, solving 
+                                    problems, and continuously learning new things. While I have a lighthearted and humorous 
+                                    personality, I always ensure professionalism when it's time to work.</p>
+                                    <h2>📋 What to expect:</h2>
+                                    <p>A dedicated and reliable team member eager to complete tasks with excellence. You can 
+                                        expect quality results, as I take my responsibilities seriously and pay close 
+                                        attention to every detail. I am open to learning and receptive to feedback, always seeking 
+                                        opportunities for growth to continuously improve and excel in my role.</p>
                                 </div>
                             </div>
                             }
